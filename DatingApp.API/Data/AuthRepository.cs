@@ -40,7 +40,7 @@ namespace DatingApp.API.Data
                 {
                     // verificamos cada byte
                     // si uno no coincide mandamos un false
-                    if (computedHash[i] == passwordHash[i]) return false;
+                    if (computedHash[i] != passwordHash[i]) return false;
                 }
             }
             return true;
